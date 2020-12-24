@@ -3,7 +3,7 @@ Write-Host "-----------------------------------"
 Write-Host "|Location Installer Bitdefender***|"
 Write-Host "-----------------------------------"
 Write-Host 
-if (Test-Path "C:\Program Files (x86)) {
+if (Test-Path "C:\Program Files (x86)") {
     $locationId = Read-Host -prompt 'Location to install?
 	Remove-Item C:\IT_Support\Bitdefender
 	mkdir C:\IT_Support\Bitdefender
