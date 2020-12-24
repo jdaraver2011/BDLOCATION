@@ -4,7 +4,7 @@ Write-Host "|Location Installer Bitdefender***|"
 Write-Host "-----------------------------------"
 Write-Host 
 if (Test-Path "C:\Program Files (x86)") {
-    $locationId = Read-Host -prompt 'Location to install?
+    $locationId = Read-Host -prompt 'Location to install?'
 	Remove-Item C:\IT_Support\Bitdefender
 	mkdir C:\IT_Support\Bitdefender
 	wget -v  "https://proteksolutionsus.sharepoint.com/:u:/s/FileHosting/EciRNEIedPFNkKhPA5rvKDIBsL3EcUCrQib9clH0Q-NpWg?e=YjLcWO&download=1" -outfile C:\IT_Support\Bitdefender\EPSKIT_x64.exe
